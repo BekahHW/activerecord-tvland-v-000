@@ -9,7 +9,7 @@ class Actor < ActiveRecord::Base
   
   def list_roles
     self.characters.map do |c|
-      
+      binding.pry
       "#{c.name} - #{c.show}"
     end
   end
